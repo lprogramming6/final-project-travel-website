@@ -1,47 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Travel Guide - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Travel Guide - Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">TravelGuide</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+            </ul>
+        </div>
     </nav>
-    
-    <main>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Discover Amazing Destinations</h1>
+            <p>Your ultimate guide to the world's most beautiful places</p>
+            <a href="#recommendations" class="btn">Explore Now</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Introduction Section -->
         <section class="intro">
-            <h1>Welcome to Our Travel Guide</h1>
-            <p>Discover amazing destinations around the world...</p>
+            <h2>Welcome to World Travel Guide</h2>
+            <p>We provide carefully curated travel recommendations to help you plan your perfect vacation. Whether you're looking for relaxing beaches, cultural temples, or country-specific adventures, we've got you covered!</p>
         </section>
-        
-        <section class="recommendation">
-            <h2>Beach Recommendation</h2>
-            <div class="images">
-                <img src="images/beach1.jpg" alt="Beautiful Beach 1">
-                <img src="images/beach2.jpg" alt="Beautiful Beach 2">
-            </div>
-        </section>
-        
-        <section class="recommendation">
-            <h2>Temple Recommendation</h2>
-            <div class="images">
-                <img src="images/temple1.jpg" alt="Ancient Temple 1">
-                <img src="images/temple2.jpg" alt="Ancient Temple 2">
-            </div>
-        </section>
-        
-        <section class="recommendation">
-            <h2>Country Recommendation</h2>
-            <div class="images">
-                <img src="images/country1.jpg" alt="Scenic Country 1">
-                <img src="images/country2.jpg" alt="Scenic Country 2">
-            </div>
+
+        <!-- Recommendations Section -->
+        <section id="recommendations" class="recommendations">
+            <!-- Beach Recommendation -->
+            <article class="recommendation-card">
+                <h3>Top Beach Destination</h3>
+                <div class="image-gallery">
+                    <img src="images/beach1.jpg" alt="White sand beach with palm trees">
+                    <img src="images/beach2.jpg" alt="Turquoise water beach at sunset">
+                </div>
+                <p>Experience paradise at our top beach picks. Crystal clear waters, white sandy shores, and perfect weather await you at these breathtaking locations.</p>
+            </article>
+
+            <!-- Temple Recommendation -->
+            <article class="recommendation-card">
+                <h3>Must-Visit Temples</h3>
+                <div class="image-gallery">
+                    <img src="images/temple1.jpg" alt="Ancient stone temple">
+                    <img src="images/temple2.jpg" alt="Colorful temple architecture">
+                </div>
+                <p>Explore these magnificent temples that showcase incredible architecture, rich history, and spiritual significance from around the world.</p>
+            </article>
+
+            <!-- Country Recommendation -->
+            <article class="recommendation-card">
+                <h3>Country Spotlight: Japan</h3>
+                <div class="image-gallery">
+                    <img src="images/japan1.jpg" alt="Tokyo cityscape">
+                    <img src="images/japan2.jpg" alt="Traditional Japanese garden">
+                </div>
+                <p>Discover Japan's perfect blend of ancient traditions and modern innovation. From bustling Tokyo to serene Kyoto, Japan offers unforgettable experiences.</p>
+            </article>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 World Travel Guide. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
